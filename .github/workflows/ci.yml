@@ -10,7 +10,7 @@ jobs:
             - name: Set up MATLAB
               uses: matlab-actions/setup-matlab@v3
               with:
-                  release: r2024b
+                  release: r2025a
             - name: Run statements
               uses: matlab-actions/run-command@v3
               with:
