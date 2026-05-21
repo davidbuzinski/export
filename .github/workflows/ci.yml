@@ -10,6 +10,6 @@ jobs:
             - name: Set up MATLAB
               uses: matlab-actions/setup-matlab@v3
             - name: Run statements
-              uses: matlab-actions/run-command@v3
+              uses: davidbuzinski/run-command@main
               with:
                   command: export("hello.mlx"
