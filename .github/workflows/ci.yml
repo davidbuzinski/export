@@ -1,0 +1,15 @@
+name: Run MATLAB Statements
+on: [push]
+jobs:
+    my-job:
+        name: Run MATLAB Statements
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v6
+            - name: Set up MATLAB
+              uses: matlab-actions/setup-matlab@v3
+            - name: Run statements
+              uses: matlab-actions/run-command@v3
+              with:
+                  command: export("hello.m");
