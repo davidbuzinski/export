@@ -12,4 +12,4 @@ jobs:
             - name: Run statements
               uses: davidbuzinski/run-command@main
               with:
-                  command: export("hello.mlx"
+                  command: error("BOOM!")
